@@ -26,18 +26,6 @@ h3 {
     margin-bottom: .3rem;
 }
 
-/* ---------------- NavBar ---------------- */
-
-/* .navbar {
-    display: flex;
-    gap: 2rem;
-    justify-content: flex-end;
-    padding: .7rem 1rem;
-
-    background-color: #4b5cbe29;
-} */
-
-
 /* ---------------- Header ---------------- */
 
 .header {
@@ -69,7 +57,7 @@ h3 {
     width: min-content;
     white-space: nowrap;
 
-    border-image: linear-gradient(160deg, #1d3be3, #d2861d) 1;
+    border-image: linear-gradient(160deg, #1d3be3, #d2861d)1;
     border-width: 2px;
     border-style: solid;
 }
@@ -136,7 +124,7 @@ h3 {
 .grid-projects {
     display: grid;
     justify-items: center;
-    gap: 2rem;
+    gap: 3rem;
 
     grid-template-areas:
         'description-1'
@@ -181,8 +169,9 @@ h3 {
     grid-area: image-4;
 }
 
-.project-no div p {
+.project-no article p {
     margin-bottom: .5rem;
+    margin-right: 2rem;
     text-align: justify;
 }
 
