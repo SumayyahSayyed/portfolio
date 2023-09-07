@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+
+    padding: 2rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: .3rem;
+}
+
+/* ---------------- NavBar ---------------- */
+
+/* .navbar {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding: .7rem 1rem;
+
+    background-color: #4b5cbe29;
+} */
+
+
+/* ---------------- Header ---------------- */
+
+.header {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    padding: 0 5rem;
+}
+
+.name {
+    background: linear-gradient(160deg, #1d3be3, #d2861d);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .btn {
+    font-size: 20px;
+}
+
+.btn {
+    font-weight: 700;
+    padding: .1rem .7rem;
+    width: min-content;
+    white-space: nowrap;
+
+    border-image: linear-gradient(160deg, #1d3be3, #d2861d) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* ---------------- About Me ---------------- */
+
+.about-me {
+    min-height: 600px;
+    background: linear-gradient(175deg, #4b5cbe 80%, white 0%);
+    color: white;
+    padding: 1rem;
+}
+
+.about-me-information {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        'profile-image'
+        'about-me-information';
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-me-information div {
+    width: 80%;
+    text-align: justify;
+}
+
+.about-me-information div p {
+    grid-area: about-me-information;
+}
+
+.about-me img {
+    max-width: 300px;
+    grid-area: profile-image;
+}
+
+.blue-section-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin: 1rem 0;
+}
+
+/* ---------------- Projects ---------------- */
+
+.project {
+    margin: 1rem;
+}
+
+.project h2 {
+    padding-top: 0;
+}
+
+.project-no {
+    margin-top: 3rem;
+}
+
+.project-no img {
+    width: 90%;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.grid-projects {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    grid-template-areas:
+        'description-1'
+        'image-1'
+        'description-2'
+        'image-2'
+        'description-3'
+        'image-3'
+        'description-4'
+        'image-4';
+}
+
+.grid-description-1 {
+    grid-area: description-1;
+}
+
+.grid-description-2 {
+    grid-area: description-2;
+}
+
+.grid-description-3 {
+    grid-area: description-3;
+}
+
+.grid-description-4 {
+    grid-area: description-4;
+}
+
+.grid-image-1 {
+    grid-area: image-1;
+}
+
+.grid-image-2 {
+    grid-area: image-2;
+}
+
+.grid-image-3 {
+    grid-area: image-3;
+}
+
+.grid-image-4 {
+    grid-area: image-4;
+}
+
+.project-no div p {
+    margin-bottom: .5rem;
+    text-align: justify;
+}
+
+.code-btn {
+    font-weight: 700;
+    padding: .1rem .7rem;
+    border: 2px solid white;
+}
+
+/* ---------------- Contact ---------------- */
+.contact {
+    min-height: 400px;
+    background: linear-gradient(-5deg, #4b5cbe 70%, white 0%);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h2 {
+    margin-top: calc(400px/2/2);
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+    background-color: #2d2e32;
+    color: white;
+    text-align: center;
+}
+
+.footer>img,
+.footer>div>a {
+    fill: white;
+    width: 30px;
+
+    margin: 2rem 0 1rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    padding-bottom: 3rem;
+}
+
+.social-links img {
+    mix-blend-mode: color-dodge;
+    width: 30px;
+}
+
+.footer-label {
+    padding-top: 1rem;
+    color: #7a7c7d;
+
+    margin: 0 1rem;
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+    background-color: #7a7c7d;
+    border: none;
+    height: 1px;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+
+    padding: 1rem 0 3rem 0;
+}
+
+.btn-group {
+    border: 1px solid grey;
+    border-radius: 2px;
+
+}
+
+.btn-group button {
+    float: left;
+    border: none;
+
+    font-weight: 600;
+    padding: .2rem 1rem;
+    height: 30px;
+}
+
+.btn-group button:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.btn-group button:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.btn-group button:first-child {
+    background-color: #dbdbdb;
+    border-right: 1px solid grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.btn-group button:first-child img {
+    max-width: 20px;
+}
+
+/* ---------------- Media Queries ---------------- */
+
+@media (min-width:800px) {
+
+    /* About Me */
+    .about-me-information {
+        margin-top: calc(600px/2/2/1.2 - 3rem);
+
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
+            'profile-image' 'about-me-information';
+    }
+
+    .about-me-information img {
+        margin-left: auto;
+    }
+}
+
+@media(max-width:800px) {
+
+    /* About Me */
+    .about-me-information {
+        margin-top: calc(600px/2/2/1.5 - 3rem);
+    }
+
+    .about-me-information img {
+        max-width: 280px;
+    }
+
+    .about-me-information div {
+        width: 90%;
+        margin-bottom: 13rem;
+    }
+}
+
+@media(max-width: 768px) {
+
+    /* Header */
+    .header {
+        padding: 0 3rem;
+    }
+
+    .header .btn {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    /* Projects */
+    .project-no img:nth-of-type(1),
+    .project-no img:nth-of-type(2),
+    .project-no img:nth-of-type(3) {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Projects */
+    .grid-projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'description-1 image-1'
+            'description-2 image-2'
+            'description-3 image-3'
+            'description-4 image-4';
+    }
+
+    .project-no img {
+        margin-right: auto;
+    }
+
+    .grid-description-1,
+    .grid-description-2,
+    .grid-description-3,
+    .grid-description-4 {
+        width: 80%;
+        margin-left: auto;
+    }
+}
+
+/* ---------------- Hover Affects ---------------- */
+
+.btn.name:hover {
+    background: linear-gradient(160deg, #1d3be3, #d2861d);
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+.code-btn.name:hover {
+    border-image: linear-gradient(160deg, #1d3be3, #d2861d)1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.btn.blue-section-btn:hover {
+    background-color: white;
+    color: #4b5cbe;
+}
+
+button:hover {
+    cursor: pointer;
+}
