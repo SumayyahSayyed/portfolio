@@ -68,7 +68,7 @@ h3 {
     min-height: 600px;
     background: linear-gradient(175deg, #4b5cbe 80%, white 0%);
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .about-me-information {
@@ -105,7 +105,7 @@ h3 {
 /* ---------------- Projects ---------------- */
 
 .project {
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .project h2 {
@@ -125,6 +125,8 @@ h3 {
     display: grid;
     justify-items: center;
     gap: 3rem;
+    column-gap: 5rem;
+
 
     grid-template-areas:
         'description-1'
@@ -171,7 +173,6 @@ h3 {
 
 .project-no article p {
     margin-bottom: .5rem;
-    margin-right: 2rem;
     text-align: justify;
 }
 
